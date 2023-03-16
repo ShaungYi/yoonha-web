@@ -1,0 +1,58 @@
+.box{
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.background{
+    width: 400px;
+    height: 400px;
+    background-image: url('../../public/blue-sky-with-light-clouds.jpg');
+    background-size: 100% 100%;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+.shutterContainer{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+.shutter{
+    display: inline-block;
+    width: 200px;
+    height: 400px;
+    background-size: 100% 100%;
+    transition: 0.3s; 
+}
+
+.left-shutter{
+    background-image: url('../../public/green-shutters-left.png');
+}
+
+.left-shutter-open{
+    transform: rotateY(140deg);
+    transform-origin:left;
+}
+
+.right-shutter{
+    background-image: url('../../public/green-shutters-right.png');
+}
+
+.right-shutter-open{
+    transform: rotateY(140deg);
+    transform-origin: right;
+}
+
+
+.answerImage{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

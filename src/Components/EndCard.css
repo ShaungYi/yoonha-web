@@ -1,0 +1,73 @@
+.celebration-message{
+    font-family: 독도;
+    font-size: 150px;
+    color: #3EB489;
+}
+
+.playAgainButtonContainer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.playAgainButton{
+
+    display: flex;
+    color: #C2FFE9;
+    background-color: #00E692;
+    padding: 10px 16px;
+    border-radius: 20px;
+    transition: all .3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+
+    z-index: 9999;
+}
+
+.playAgainButton:hover{
+    background-color: #017A4F;
+    color: #fff;
+}
+
+.playAgainButton > .arrow{
+    width: 6px;
+    height: 6px;
+    border-right: 2px solid #C2FFE9;
+    border-bottom: 2px solid #C2FFE9;
+    position: relative;
+    transform: rotate(-45deg);
+    margin: 0 6px;
+    transition: all .3s ease;
+}
+
+.playAgainButton > .arrow::before {
+    display: block;
+    background-color: currentColor;
+    width: 3px;
+    transform-origin: bottom right;
+    height: 2px;
+    position: absolute;
+    opacity: 0;
+    bottom: calc(-2px / 2);
+    transform: rotate(45deg);
+    transition: all .3s ease;
+    content: "";
+    right: 0;
+}
+
+.playAgainButton:hover > .arrow {
+    transform: rotate(-45deg) translate(4px, 4px);
+    border-color: text-hover-color;
+}
+
+.playAgainButton:hover > .arrow::before {
+    opacity: 1;
+    width: 8px;
+}

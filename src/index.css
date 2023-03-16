@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face{
+  font-family: '독도';
+  src: url('../public/EastSeaDokdo-Regular.ttf') format('truetype');
+}
